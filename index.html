@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio de Javier Mariñez</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,10 +13,16 @@
             color: #333;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
             text-align: center;
+            margin-bottom: 2rem;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            text-align: center;
+            margin: 2rem;
         }
         .container {
             padding: 2rem;
@@ -27,18 +33,42 @@
             padding: 1rem;
             border-radius: 5px;
             background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .project img {
             max-width: 100%;
             border-radius: 5px;
         }
+        .project a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Banner -->
     <header>
-        <h1>Bienvenido a Mi Portafolio</h1>
-        <p>Explora mis proyectos de Data Science</p>
+        <img src="Copia%20de%20banner.png" alt="Javier Mariñez Banner">
     </header>
+
+    <!-- Introducción -->
+    <section>
+        <h2>Bienvenido a Mi Portafolio de Data Science</h2>
+        <p>
+            Este portafolio tiene como objetivo mostrar mis habilidades en análisis de datos, 
+            modelado predictivo, visualización y desarrollo de soluciones basadas en datos. 
+            Aquí encontrarás proyectos interactivos y ejemplos prácticos que reflejan mi 
+            experiencia y pasión por transformar datos en estrategias con impacto.
+        </p>
+    </section>
+
+    <!-- Proyectos -->
     <div class="container">
         <div class="project">
             <h2>Proyecto 1: Limpieza de Datos</h2>
@@ -49,6 +79,11 @@
             <h2>Proyecto 2: Dashboard de Ventas</h2>
             <p>Un dashboard interactivo para visualizar las ventas por región.</p>
             <a href="https://mi-dashboards-demo.com" target="_blank">Ver Dashboard</a>
+        </div>
+        <div class="project">
+            <h2>Proyecto 3: Modelo Predictivo</h2>
+            <p>Modelo de predicción usando Random Forest para clasificar clientes.</p>
+            <a href="https://github.com/tuusuario/proyecto3" target="_blank">Ver en GitHub</a>
         </div>
     </div>
 </body>
