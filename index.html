@@ -13,12 +13,32 @@
             color: #333;
         }
         header {
+            position: relative;
             text-align: center;
-            margin-bottom: 2rem;
         }
         header img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+        }
+        /* Posición de los íconos en la esquina superior derecha */
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 10;
+        }
+        .social-icons a {
+            margin-left: 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
         section {
             text-align: center;
@@ -45,29 +65,20 @@
         .project a:hover {
             text-decoration: underline;
         }
-        .social-icons {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            transition: transform 0.3s ease;
-        }
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
-    <!-- Banner -->
+    <!-- Banner con iconos sobrepuestos -->
     <header>
         <img src="El%20Banner.jpg" alt="Javier Mariñez Banner">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-antonio-mariñez-enríquez" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/javu98" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+            </a>
+        </div>
     </header>
 
     <!-- Introducción -->
@@ -85,22 +96,7 @@
             enfocados en <strong>Business Intelligence</strong>, donde exploré visualizaciones interactivas, análisis predictivo y 
             segmentación de usuarios para apoyar la toma de decisiones.
         </p>
-        <p>
-            Mi experiencia en medios de comunicación se refleja en la creación de contenido para redes sociales, televisión, 
-            radio y prensa, abarcando todo el proceso, desde la planeación y guionización hasta la edición y presentación final. 
-            He liderado equipos y administrado proyectos bajo presión, obteniendo resultados efectivos tanto en métricas como en impacto.
-        </p>
     </section>
-
-    <!-- Iconos de Redes Sociales -->
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/javier-antonio-mariñez-enríquez" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/javu98" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-        </a>
-    </div>
 
     <!-- Proyectos -->
     <div class="container">
@@ -113,11 +109,6 @@
             <h2>Proyecto 2: Dashboard de Ventas</h2>
             <p>Un dashboard interactivo para visualizar las ventas por región.</p>
             <a href="https://mi-dashboards-demo.com" target="_blank">Ver Dashboard</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 3: Modelo Predictivo</h2>
-            <p>Modelo de predicción usando Random Forest para clasificar clientes.</p>
-            <a href="https://github.com/tuusuario/proyecto3" target="_blank">Ver en GitHub</a>
         </div>
     </div>
 </body>
