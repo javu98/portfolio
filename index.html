@@ -35,10 +35,6 @@
             background: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .project img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
         .project a {
             display: inline-block;
             margin-top: 1rem;
@@ -49,17 +45,34 @@
         .project a:hover {
             text-decoration: underline;
         }
+        .social-icons {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <!-- Banner -->
     <header>
-        <img src="Banner%20(2).png" alt="Javier Mariñez Banner">
+        <img src="El%20Banner.jpg" alt="Javier Mariñez Banner">
     </header>
 
     <!-- Introducción -->
     <section>
-        <h2>¡Bienvenido a mi portafolio!</h2>
+        <h2>¡Bienvenido (a) a mi portafolio!</h2>
         <p>
             Mi nombre es <strong>Javier Antonio Mariñez Enríquez</strong>, soy comunicador y científico de datos con experiencia 
             en análisis, creación de contenido y gestión estratégica. Este espacio está diseñado para compartir un resumen 
@@ -77,16 +90,17 @@
             radio y prensa, abarcando todo el proceso, desde la planeación y guionización hasta la edición y presentación final. 
             He liderado equipos y administrado proyectos bajo presión, obteniendo resultados efectivos tanto en métricas como en impacto.
         </p>
-        <p>
-            Además, incluyo ejercicios prácticos que demuestran el manejo de herramientas como <strong>Pandas, Matplotlib y Seaborn</strong>, 
-            así como ejemplos de automatización de tareas y pronósticos utilizando bases de datos reales. También podrás explorar mi experiencia 
-            en la <strong>medición de audiencias</strong> y en la optimización de estrategias basadas en datos.
-        </p>
-        <p>
-            Este portafolio es una ventana a mis habilidades y mi enfoque para unir creatividad y análisis técnico en soluciones que 
-            generan valor. ¡Gracias por visitar y explorar mi trabajo!
-        </p>
     </section>
+
+    <!-- Iconos de Redes Sociales -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/javier-antonio-mariñez-enríquez" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/javu98" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+        </a>
+    </div>
 
     <!-- Proyectos -->
     <div class="container">
@@ -108,3 +122,4 @@
     </div>
 </body>
 </html>
+
